@@ -1,0 +1,557 @@
+/* input text field */
+
+/* input.wellau-input.ant-input */
+input.wellau-input.ant-input[type = text],input.wellau-input.ant-input[type = password]{
+    border-bottom:1rem solid #BDBDBD;
+}
+input.wellau-input.ant-input[type = text]:focus,input.wellau-input.ant-input[type = password]:focus{
+    border-color:#076AEB;
+}
+
+.wellau-input.ant-input-affix-wrapper{
+    padding:12rem 0;
+    border-width:0 0 1rem 0;
+    border-radius:0;
+    border-color:#BDBDBD;
+    border-width:0;
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 17rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    box-shadow:none !important;
+}
+
+.wellau-input.ant-input-affix-wrapper .ant-input-suffix:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:1rem;
+    padding:0;
+    margin:0;
+    background:#BDBDBD;
+}
+.wellau-input.ant-input-affix-wrapper input:focus + .ant-input-suffix:after{
+    background:#076AEB;
+}
+
+.wellau-input.ant-input-affix-wrapper .ant-input,
+.wellau-input.ant-input[type = text],
+.wellau-input.ant-input-affix-wrapper.ant-input-password
+{
+    padding:12rem 0;
+    border-width:0 0 1rem 0;
+    border-radius:0;
+    border-color:#BDBDBD;
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 18rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    background-color:transparent;
+    border-bottom-width:0;
+}
+
+
+
+
+.wellau-input.ant-input-affix-wrapper.ant-input-affix-wrapper-focused:not(.ant-input-affix-wrapper-disabled):hover{
+    border-bottom-color:#076AEB;
+}
+
+.wellau-input.ant-input-affix-wrapper >input.ant-input{
+    font-weight:700;
+}
+
+.wellau-input.ant-input[type = text]:disabled,
+.wellau-input.ant-input-affix-wrapper.ant-input-password:disabled{
+    font-weight:700;
+}
+.wellau-input.ant-input[type = text]::placeholder,
+.wellau-input.ant-input-affix-wrapper >input.ant-input::placeholder{
+    color:#ACB3BD;
+    font-weight:600;
+}
+.wellau-input.ant-input[type = text]:hover,.wellau-input.ant-input[type = text]:focus,
+.wellau-input.ant-input-affix-wrapper.ant-input-password.ant-input-affix-wrapper-focused
+{
+    outline:none;
+    border-color:#BDBDBD;
+    box-shadow:none;
+}
+.wellau-input.ant-input-affix-wrapper-disabled.ant-input-password{
+    /* opacity:0.4; */
+    color:rgba(51,51,51,0.4);
+    background:#EFEFEF;
+}
+.wellau-input.ant-input-disabled, .wellau-input.ant-input[disabled]{
+    /* opacity:0.4; */
+    color:rgba(51,51,51,0.4);
+}
+.wellau-input.ant-input-disabled:not(.small-size), .wellau-input.ant-input[disabled]:not(.small-size){
+    /* opacity:0.4; */
+    background:#EFEFEF;
+}
+.wellau-input.ant-input-disabled, .wellau-input.ant-input[disabled]::placeholder{
+    color:rgba(51,51,51,0.4);
+}
+
+
+.wellau-input.ant-input-affix-wrapper >input.ant-input{
+    height:25rem;
+}
+
+
+
+
+/* small-size */
+.wellau-input.small-size.ant-input-affix-wrapper .ant-input,
+.wellau-input.small-size.ant-input[type = text],
+.wellau-input.small-size.ant-input-affix-wrapper.ant-input-password
+{
+    font-size: 16rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4rem */
+    padding:0;
+}
+
+.wellau-input.small-size.ant-input[type = text],
+.wellau-input.small-size.small-size.ant-input-affix-wrapper .ant-input,
+.wellau-input.small-size.ant-input-password > [type = password]{
+    height:40rem;
+}
+.wellau-input.small-size.ant-input[type = text]:focus{
+    border-bottom-color:#076AEB;
+}
+.wellau-input.small-size.ant-input-affix-wrapper{
+    padding:7rem 0;
+}
+.wellau-input.small-size.ant-input-affix-wrapper.ant-input-affix-wrapper-disabled{
+    background:transparent;
+}
+.wellau-input.wellau-input.small-size.ant-input[type = text]::placeholder,
+.wellau-input.wellau-input.small-size.ant-input-affix-wrapper >input.ant-input::placeholder{
+    color:#ACB3BD;
+    font-weight:400;
+}
+/*
+ant-input-affix-wrapper ant-input-affix-wrapper-focused ant-input-password wellau-input small-size css-dev-only-do-not-override-1p3hq3p
+*/
+
+
+
+/* clear */
+.wellau-input.ant-input-affix-wrapper .ant-input-suffix{
+    margin-right:12rem;
+}
+.wellau-input.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+    border-color:#BDBDBD;
+    border-right-width:0;
+    box-shadow:none;
+}
+
+/* search input component */
+.search-input .wellau-input.ant-input-affix-wrapper >input.ant-input{
+    width:calc(100% - 60rem);    
+}
+
+
+/* input password */
+.wellau-input .ant-input[type = password]{
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 17rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.wellau-input.ant-input-affix-wrapper .anticon.ant-input-password-icon{
+    width:15rem;
+    height:15rem;
+    background:url(../img/icon-password-none.svg) no-repeat center;
+}
+.wellau-input.ant-input-affix-wrapper .anticon.ant-input-password-icon.anticon-eye{
+    background:url(../img/icon-password-eye.svg) no-repeat center;
+}
+.wellau-input.ant-input-affix-wrapper .anticon.ant-input-password-icon svg{
+    display:none;
+}
+
+/* checkbox */
+
+.wellau-checkbox .ant-checkbox .ant-checkbox-inner{
+    width:24rem;
+    height:24rem;
+    border-width:1.6rem;
+    border-color:#ccc;
+    border-radius:50%;
+}
+.wellau-checkbox .ant-checkbox-checked:after{
+    display:none;
+}
+.wellau-checkbox .ant-checkbox-checked .ant-checkbox-inner:after{
+    left:32%;
+    width:8rem;
+}
+.wellau-checkbox .ant-checkbox+span{
+    font-family:"Noto Sans KR", sans-serif;
+    color:#333;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+}
+.wellau-checkbox.sizeBig .ant-checkbox .ant-checkbox-inner{
+    width:28rem;
+    height:28rem;
+    border-width:1.65rem;
+    border-color:#ccc;
+}
+.wellau-checkbox.sizeBig .ant-checkbox-checked .ant-checkbox-inner:after{
+    left:25%;
+    width:12rem;
+    height:12rem;
+}
+.wellau-checkbox.sizeBig .ant-checkbox+span{
+    color:#333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+}
+.wellau-checkbox.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled):after{
+    display:none;
+}
+
+.wellau-checkbox.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner{
+    border-color:#076AEB;
+    background:#076AEB;
+    outline:none
+}
+
+.wellau-checkbox.ant-checkbox-wrapper .ant-checkbox-input:hover + .ant-checkbox-inner{
+    border-width:1.6rem;
+    border-color:#ccc;
+}
+.wellau-checkbox.ant-checkbox-wrapper .ant-checkbox-input:focus-visible + .ant-checkbox-inner{
+    /* outline:none; */
+}
+
+:where(.css-dev-only-do-not-override-1p3hq3p).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled):after{
+    /* display:none; */
+}
+/* radio */
+.wellau-radio-group{
+    width:100%;
+}
+.wellau-radio.ant-radio-wrapper{
+    display:flex;
+    align-items:center;
+    height:40rem;
+    margin-right:0;
+}
+.wellau-radio.ant-radio-wrapper .ant-radio .ant-radio-inner{
+    position:relative;
+    width:24rem;
+    height:24rem; 
+}
+.wellau-radio.ant-radio-wrapper .maxInput-wrapper{
+
+}
+.wellau-radio.ant-radio-wrapper .maxInput-wrapper .textFieldMixmunNumBox{
+    position:absolute;
+    bottom:-10rem;
+    right:0;
+    height:20rem;
+    transform:translate(0,100%);
+}
+.wellau-radio.ant-radio-wrapper .maxInput-wrapper .wellau-input.ant-input[type = text]{
+    height:40rem;
+    padding-top:0;
+    padding-bottom:0;
+}
+.wellau-radio.ant-radio-wrapper span.ant-radio+*{
+    flex:1;
+    padding-inline-end:0;
+}
+.wellau-radio.ant-radio-wrapper .ant-radio-checked .ant-radio-inner::after{
+    position:absolute;
+    top:50%;
+    left:50%;
+    right:auto;
+    bottom:auto;
+    width:15rem;
+    height:11rem;
+    margin-block-start:0;
+    margin-inline-start:0;
+    transform:scale(1) translate(-50%,-50%);
+    background:url(../img/input-bg-icon-check.png) no-repeat center;
+}
+.wellau-radio.ant-radio-wrapper{
+    font-size: 17rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height:1;
+}
+.ant-checkbox-wrapper.ant-checkbox-wrapper-disabled.wellau-checkbox{
+    opacity:0.4;
+}
+
+.wellau-checkbox.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner{
+    border-color:#076AEB;
+    background:#076AEB;
+}
+
+/* btn */
+.wellau-btn.ant-btn,
+.wellau-btn.ant-btn.ant-btn.ant-btn-primary
+{
+    height:55rem !important;
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 18rem;
+    line-height: 1;
+    border-radius: 4rem;
+    border-width:0;
+    background-color:#076AEB;
+}
+
+.wellau-btn.ant-btn > div{
+    display:none;
+}
+
+.wellau-btn.ant-btn.small-size,
+.wellau-btn.ant-btn.ant-btn.ant-btn-primary.small-size
+{
+    height:40rem !important;
+    font-size: 17rem;
+}
+.wellau-btn.ant-btn{
+    border-radius: 4rem;
+    border: 1rem solid #BDBDBD;
+    background: #fff;
+    line-height:1;
+    font-weight: 400;
+    color:#333;
+}
+.wellau-btn.ant-btn-default:not(:disabled):hover{
+    color:#333;
+    border: 1rem solid #BDBDBD;
+}
+.wellau-btn.ant-btn-default:not(:disabled):active{
+    color:#333;
+    border: 1rem solid #BDBDBD;
+}
+.wellau-btn.ant-btn:not(:disabled):focus-visible{
+    color:#333;
+    border: 1rem solid #BDBDBD;
+}
+
+.ant-btn.wellau-btn:disabled{
+    opacity:0.4;
+}
+
+/* button primary */
+.wellau-btn.ant-btn.ant-btn.ant-btn-primary{
+    font-weight: 700;
+    color:#fff;
+}
+.wellau-btn.ant-btn.ant-btn.ant-btn-primary > div{
+    display:none;
+}
+.wellau-btn.ant-btn.ant-btn-primary[disabled]{
+    cursor: not-allowed;
+    border-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.25);
+    background-color: #EFEFEF;
+    box-shadow: none;
+    
+}
+
+
+/*
+:where(.css-dev-only-do-not-override-1p3hq3p).ant-btn-link:not(:disabled):active
+*/
+/* button link */
+.wellau-btn.ant-btn-link,.wellau-btn.ant-btn-link:active,.wellau-btn.ant-btn-link:hover,
+.wellau-btn.ant-btn-link:not(:disabled):active,
+.wellau-btn.ant-btn-link:not(:disabled):hover
+{
+    padding:4rem 12rem;
+    font-family:"Noto Sans KR", sans-serif;
+    color:#333;
+    font-size: 15rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21rem */
+    border-width:0;
+}
+
+.wellau-btn.ant-btn-link.ant-btn-link:not(:disabled):hover{
+    color:#333;
+}
+
+/* :where(.css-dev-only-do-not-override-urems1x).ant-btn-primary{
+    color:red;
+}
+:where(.css-dev-only-do-not-override-urems1x).ant-btn-primary:not(:disabled):hover{
+    color:black;
+} */
+
+
+
+/* select */
+.ant-select-single.wellau-select{
+    vertical-align:top;
+}
+.ant-select-focused.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector.wellau-select{
+    vertical-align:top;
+    border-color:#bdbdbd;
+
+}
+.ant-select-single:not(.ant-select-customize-input).wellau-select .ant-select-selector{
+    display:flex;
+    align-items:center;
+    padding:0;
+    outline:none;
+    box-shadow:none !important;
+    &:before{
+        content:"";
+        position:absolute;
+        right:0;
+        top:50%;
+        z-index:1000;
+        width:20rem;
+        height:20rem;
+        transform:translate(0,-50%);
+        background:url(../img/wellau-select-arrow.svg) no-repeat center;
+    }
+}
+.ant-select:not(.ant-select-customize-input).wellau-select .ant-select-selector{
+    height:40rem;
+    border-width:0 0 1rem 0;
+    border-color:#bdbdbd !important;
+    border-radius:0;
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    color:#999;
+    outline:none;
+}
+.ant-select.wellau-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector{
+    border-color:#bdbdbd;
+}
+.ant-select-single.wellau-select .ant-select-selector .ant-select-selection-item{
+    display:flex;
+    align-items:center;
+    line-height:1;
+    font-weight:700;
+    color:#333;
+}
+
+.ant-select-single.wellau-select .ant-select-selector .ant-select-selection-placeholder{
+    color:#ACB3BD;
+    font-weight:bold;
+}
+
+.ant-select.wellau-select:not(.ant-select-customize-input).wellau-select .ant-select-selector{
+    /* opacity:0.7; */
+    background-color:transparent;
+}
+
+.ant-select.wellau-select.ant-select-disabled .ant-select-selector .ant-select-selection-placeholder{
+    opacity:0.4;
+}
+
+
+
+.width100per{
+    width:100%;
+}
+
+.textAlignCenter{
+    text-align:center;
+}
+
+
+
+/* slider */
+.wellau-slider.ant-slider .ant-slider-track{
+  background-color:#076AEB;   
+}
+.wellau-slider.ant-slider .ant-slider-rail{
+    background:#ccc;
+}
+
+.wellau-slider.ant-slider .ant-slider-handle::after{
+    box-shadow:0 0 0 2px #076AEB;
+    /* box-shadow:0 0 0 2px #91caff; */
+}
+
+
+/* wellau-carousel */
+
+.wellau-carousel-box{
+    flex:1;
+}
+
+.wellau-carousel.ant-carousel > .slick-slider{
+    text-align: center;
+    flex:1;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
+  .wellau-carousel.ant-carousel > .slick-slider h3 {
+    color: #fff;
+  }
+
+
+.wellau-carousel.ant-carousel,
+.wellau-carousel.ant-carousel > .slick-slider,
+.wellau-carousel.ant-carousel > .slick-slider > .slick-list,
+.wellau-carousel.ant-carousel > .slick-slider > .slick-list > .slick-track
+{
+    height:100%;
+}
+
+
+
+/* switch */
+.wellau-switch.big-size.ant-switch{
+    width: 52rem;
+    height: 32rem;
+}
+.wellau-switch.big-size.ant-switch .ant-switch-handle{
+    top:4rem;
+    width: 24rem;
+    height: 24rem;   
+}
+.wellau-switch.big-size.ant-switch.ant-switch-checked .ant-switch-handle{
+    inset-inline-start:calc(100% - 27rem);
+}
+.wellau-switch.big-size.ant-switch .ant-switch-handle::before{
+    border-radius:50%;
+}
+.wellau-switch.big-size.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled){
+    background-color:#076AEB;
+}
+.wellau-switch.ant-switch > div:not(.ant-switch-handle){
+    display:none;
+}
+
+
+/* modal */
+.wellau-modal.ant-modal .ant-modal-content{
+    padding:40rem 20rem 20rem;
+}
+.wellau-modal.ant-modal .ant-modal-footer{
+    margin-top:8rem;
+}
+.wellau-modal.ant-modal  .ant-modal-close{
+    top:10rem;
+    inset-inline-end: 10rem;
+}
