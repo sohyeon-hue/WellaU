@@ -10,7 +10,7 @@
 const path = require('path')
 
 module.exports = {
-  publicPath: '',
+  publicPath: 'sohyeon-hue.github.io',
   outputDir: './docs',
   chainWebpack: config => {
     config.resolve.alias
