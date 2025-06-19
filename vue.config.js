@@ -10,7 +10,7 @@
 const path = require('path')
 
 module.exports = {
-  publicPath: 'WellaU',
+  publicPath: '/WellaU/',
   outputDir: './docs',
   chainWebpack: config => {
     config.resolve.alias
