@@ -371,7 +371,7 @@
         justify-content:center;
         width:57rem;
         border-radius:50%;
-        overflow:hidden;
+        /*overflow:hidden;*/
         background:yellow;
         &> img{
             position:absolute;
