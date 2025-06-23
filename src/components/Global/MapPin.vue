@@ -208,8 +208,8 @@
         const price = w.value;
         style.width = price + "rem";
         style.height = price + "rem";
-        style.top = ((props.width - price) / 2) + "rem";
-        style.left = ((props.width - price) / 2) + "rem";
+        style.top = ((props.width - price) / 2.3) + "rem";
+        style.left = ((props.width - price) / 2.3) + "rem";
         style.background = fillColor.value;
         return style;
     })
@@ -219,8 +219,8 @@
         const price = w.value;
         style.width = price + "rem";
         style.height = price + "rem";
-        style.top = ((props.width - price) / 2) + "rem";
-        style.left = ((props.width - price) / 2) + "rem";
+        style.top = ((props.width - price) / 2.3) + "rem";
+        style.left = ((props.width - price) / 2.3) + "rem";
         return style;
     })
     /* // 241212 : 추가 */
@@ -363,8 +363,8 @@
     /* // 241212 : 추가 */
     .mapPin-icon-circle{
         position:absolute;
-        top:10rem;
-        left:10rem;
+        /* top:5rem;
+        left:5rem; */
         z-index:50;
         display:flex;
         align-items:center;
