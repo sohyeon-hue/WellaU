@@ -177,7 +177,7 @@
         const per = props.per * (360 / 100);
         const color = (props.per < 14) ? "#eb4b43" : (props.per < 51) ? "#ef8633" : (props.per < 75) ? "#f7cd47" : "#57DED2";
         // const price = (props.width * 0.6) + 7;
-        const price = w.value + 7;
+        const price = w.value + 80;
         style.width = price + "rem";
         style.height = price + "rem";
         style.top = ((props.width - price) / 2.3) + "rem";
@@ -205,18 +205,18 @@
     })
     const mapPinIconCircleStyle = computed(()=>{
         const style = {};
-        const price = w.value;
-        style.width = ((props.width - price) / 1.3) + "rem";
-        style.height = ((props.width - price) / 1.3) + "rem";
-        style.top = ((props.width - price) / 9) + "rem";
-        style.left = ((props.width - price) / 9) + "rem";
+        const price = w.value + 70;
+        style.width = price + "rem";
+        style.height = price + "rem";
+        style.top = ((props.width - price) / 2.3) + "rem";
+        style.left = ((props.width - price) / 2.3) + "rem";
         style.background = fillColor.value;
         return style;
     })
     /* 241212 : 추가 */
     const mapPinIconIconStyle = computed(()=>{
         const style = {};
-        const price = w.value;
+        const price = w.value + 70;
         style.width = price + "rem";
         style.height = price + "rem";
         style.top = ((props.width - price) / 2.3) + "rem";
