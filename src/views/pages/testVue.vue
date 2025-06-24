@@ -2,7 +2,7 @@
     <div class="dummy-table-layout">
         <div class="dummy-box-area-rec"><MapPin /></div>
         <div class="dummy-box-area-rec"><MapPin :photo="photo" />:photo="photo"</div>
-        <div class="dummy-box-area-rec"><MapPin pinText="이" :per="45" /></div>
+        <div class="dummy-box-area-rec"><MapPin pinText="이" /></div>
         <div class="dummy-box-area-rec"><MapPin pinText="" :per="45" /></div>
         <div class="dummy-box-area-rec"><MapPin pinText="홍" pinColor="blue" />  pinText="홍"<br />pinColor="blue"</div>
         <div class="dummy-box-area-rec"><MapPin /></div>

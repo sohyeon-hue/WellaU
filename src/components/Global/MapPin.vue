@@ -180,8 +180,8 @@
         const price = w.value + 7;
         style.width = price + "rem";
         style.height = price + "rem";
-        style.top = ((props.width - price) / 2) + "rem";
-        style.left = ((props.width - price) / 2) + "rem";
+        style.top = ((props.width - price) / 2.3) + "rem";
+        style.left = ((props.width - price) / 2.3) + "rem";
         style.background = `conic-gradient(${color} ${per}deg, rgba(255,255,255,0.25) ${per}deg)`;
         return style;
     })
@@ -292,10 +292,10 @@
     .mapPin-pieChart{
         position:absolute;
         z-index:10;
-        top:5rem;
+        /* top:5rem;
         left:5rem;
         width:70rem;
-        height:70rem;
+        height:70rem; */
         border-radius:50%;
         /* transform-origin:50%; */
         /* background:conic-gradient(#db4e59 40deg, #57DED2 40deg); */
