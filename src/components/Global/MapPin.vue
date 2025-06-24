@@ -206,10 +206,10 @@
     const mapPinIconCircleStyle = computed(()=>{
         const style = {};
         const price = w.value;
-        style.width = price + "rem";
-        style.height = price + "rem";
-        style.top = ((props.width - price) / 2.3) + "rem";
-        style.left = ((props.width - price) / 2.3) + "rem";
+        style.width = ((props.width - price) / 1.3) + "rem";
+        style.height = ((props.width - price) / 1.3) + "rem";
+        style.top = ((props.width - price) / 9) + "rem";
+        style.left = ((props.width - price) / 9) + "rem";
         style.background = fillColor.value;
         return style;
     })
@@ -370,8 +370,9 @@
         align-items:center;
         justify-content:center;
         width:57rem;
+				height: 57rem;
         border-radius:50%;
-        /*overflow:hidden;*/
+        overflow:hidden;
         background:yellow;
         &> img{
             position:absolute;
