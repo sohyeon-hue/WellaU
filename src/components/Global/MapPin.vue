@@ -209,19 +209,19 @@
         const price = w.value;
         style.width = price + "rem";
         style.height = price + "rem";
-        style.top = ((props.width - price) / 2) + "rem";
-        style.left = ((props.width - price) / 2) + "rem";
+        style.top = ((props.width - price) / 2.3) + "rem";
+        style.left = ((props.width - price) / 2.3) + "rem";
         style.background = fillColor.value;
         return style;
     })
     /* 241212 : 추가 */
     const mapPinIconIconStyle = computed(()=>{
         const style = {};
-        const price = w.value;
+        const price = w.value ;
         style.width = price + "rem";
         style.height = price + "rem";
-        style.top = ((props.width - price) / 2) + "rem";
-        style.left = ((props.width - price) / 2) + "rem";
+        style.top = ((props.width - price) / 2.3) + "rem";
+        style.left = ((props.width - price) / 2.3) + "rem";
         return style;
     })
     /* // 241212 : 추가 */
@@ -255,7 +255,7 @@
     })
     const firstNameStyle = computed(()=>{
         const style = {};
-        style.fontSize = (props.width * 0.55) + "rem"
+        style.fontSize = (props.width * 0.5) + "rem"
         return style;
     })
     const setCircleSize = ()=>{
@@ -295,8 +295,8 @@
         z-index:10;
         top:10rem;
         left:10rem;
-        width:77rem;
-        height:77rem;
+        width:80%;
+        height:54%;
         border-radius:50%;
         /* transform-origin:50%; */
         /* background:conic-gradient(#db4e59 40deg, #57DED2 40deg); */
@@ -349,10 +349,11 @@
     /* 241212 : 추가 */
     .mapPin-icon-icon{
         position:absolute;
-        top:13rem;
-        left:13rem;
-				width:70rem;
-				height: 70rem;
+        top:9%;
+        left:50%;
+				transform:translateX(-50%);
+				width: 70%;
+				height: 49%;
         z-index:50;
         display:flex;
         align-items:center;
@@ -366,14 +367,15 @@
     /* // 241212 : 추가 */
     .mapPin-icon-circle{
         position:absolute;
-        top:13rem;
-        left:13rem;
+        top:9%;
+        left:50%;
+				transform:translateX(-50%);
         z-index:50;
         display:flex;
         align-items:center;
         justify-content:center;
-        width:70rem;
-				height: 70rem;
+        width: 70%;
+				height: 49%;
         border-radius:50%;
         overflow:hidden;
         background:yellow;
@@ -391,7 +393,7 @@
             justify-content:center;
             padding:0;
             margin:0;
-            font-size: 2em;
+            /* font-size: 2em; */
             font-style: normal;
             font-weight: 300;
             line-height: 1;
@@ -401,8 +403,8 @@
         &> .none-icon{
             position:relative;
             display:block;;
-            width:calc(100% - 2rem);
-            height:calc(100% - 2rem);
+            width:100%;
+            height:100%;
             top:50%;
             left:50%;
             transform:translate(-50%,-50%);
