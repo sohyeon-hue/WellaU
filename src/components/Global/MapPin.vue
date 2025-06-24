@@ -393,7 +393,6 @@
             justify-content:center;
             padding:0;
             margin:0;
-            /* font-size: 2em; */
             font-style: normal;
             font-weight: 300;
             line-height: 1;
