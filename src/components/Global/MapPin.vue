@@ -91,7 +91,7 @@
     </div>
 </template>
 <script setup>
-    import { ref,computed,watch,defineProps,defineEmits,defineModel,onMounted } from 'vue'
+    import { ref,reactive,computed,watch,defineProps,defineEmits,defineModel,onMounted } from 'vue'
     const props = defineProps({
         value : {
             type : Boolean,
@@ -155,7 +155,8 @@
             default : ()=> "100"
         }
     })
-    const w = ref(0);
+    // const w = ref(0);
+    const w = reactive(0);
     const path = ref("path");
     const emits = defineEmits(['click','mapPinPopupEv'])
     const model = defineModel('popShow');
@@ -208,8 +209,8 @@
         const price = w.value;
         style.width = price + "rem";
         style.height = price + "rem";
-        style.top = ((props.width - price) / 2.3) + "rem";
-        style.left = ((props.width - price) / 2.3) + "rem";
+        style.top = ((props.width - price) / 2) + "rem";
+        style.left = ((props.width - price) / 2) + "rem";
         style.background = fillColor.value;
         return style;
     })
@@ -219,8 +220,8 @@
         const price = w.value;
         style.width = price + "rem";
         style.height = price + "rem";
-        style.top = ((props.width - price) / 2.3) + "rem";
-        style.left = ((props.width - price) / 2.3) + "rem";
+        style.top = ((props.width - price) / 2) + "rem";
+        style.left = ((props.width - price) / 2) + "rem";
         return style;
     })
     /* // 241212 : 추가 */
@@ -292,10 +293,10 @@
     .mapPin-pieChart{
         position:absolute;
         z-index:10;
-        /* top:5rem;
-        left:5rem;
-        width:70rem;
-        height:70rem; */
+        top:10rem;
+        left:10rem;
+        width:77rem;
+        height:77rem;
         border-radius:50%;
         /* transform-origin:50%; */
         /* background:conic-gradient(#db4e59 40deg, #57DED2 40deg); */
@@ -348,8 +349,10 @@
     /* 241212 : 추가 */
     .mapPin-icon-icon{
         position:absolute;
-        top:10rem;
-        left:10rem;
+        top:13rem;
+        left:13rem;
+				width:70rem;
+				height: 70rem;
         z-index:50;
         display:flex;
         align-items:center;
@@ -363,14 +366,14 @@
     /* // 241212 : 추가 */
     .mapPin-icon-circle{
         position:absolute;
-        /* top:5rem;
-        left:5rem; */
+        top:13rem;
+        left:13rem;
         z-index:50;
         display:flex;
         align-items:center;
         justify-content:center;
-        width:57rem;
-				height: 57rem;
+        width:70rem;
+				height: 70rem;
         border-radius:50%;
         overflow:hidden;
         background:yellow;
